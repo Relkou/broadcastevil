@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Privacy Policy | Broadcast Evil</title>
+	<meta name="description" content="Official Privacy Policy for Broadcast Evil (Web & Discord Activity) by Relkou / Sizelu.">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://broadcastevil.online/privacy/">
+	<link rel="icon" type="image/png" href="/index.icon.png">
+	<style>
+		:root {
+			--bg: #070506;
+			--panel: #100b0c;
+			--panel-border: #3a1618;
+			--accent: #dc2626;
+			--accent-soft: #f87171;
+			--text: #e7e2e2;
+			--muted: #a69b9b;
+			--divider: #261415;
+		}
+		* { box-sizing: border-box; }
+		html, body {
+			margin: 0;
+			padding: 0;
+			background: radial-gradient(circle at top, #18090b 0%, var(--bg) 55%);
+			color: var(--text);
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+			line-height: 1.65;
+		}
+		a { color: var(--accent-soft); text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		.wrap {
+			max-width: 880px;
+			margin: 0 auto;
+			padding: 32px 20px 64px;
+		}
+		.topbar {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px;
+			padding-bottom: 18px;
+			margin-bottom: 24px;
+			border-bottom: 1px solid var(--divider);
+		}
+		.brand {
+			font-size: 1.05rem;
+			font-weight: 800;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.brand span { color: var(--accent); }
+		.nav-links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 14px;
+			font-size: 0.92rem;
+		}
+		.nav-links a {
+			color: var(--muted);
+			padding: 6px 10px;
+			border-radius: 6px;
+			border: 1px solid transparent;
+		}
+		.nav-links a.active {
+			color: #fff;
+			border-color: var(--panel-border);
+			background: rgba(220, 38, 38, 0.12);
+		}
+		.lang-bar {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px;
+			margin-bottom: 24px;
+			padding: 12px 16px;
+			background: var(--panel);
+			border: 1px solid var(--panel-border);
+			border-radius: 8px;
+		}
+		.meta-tag {
+			font-size: 0.85rem;
+			color: var(--muted);
+		}
+		.lang-buttons {
+			display: flex;
+			gap: 8px;
+		}
+		.lang-btn {
+			cursor: pointer;
+			background: #170e10;
+			color: var(--muted);
+			border: 1px solid var(--panel-border);
+			border-radius: 6px;
+			padding: 6px 12px;
+			font-size: 0.85rem;
+			font-weight: 600;
+		}
+		.lang-btn.active {
+			background: var(--accent);
+			border-color: var(--accent);
+			color: #fff;
+		}
+		.card {
+			background: var(--panel);
+			border: 1px solid var(--panel-border);
+			border-radius: 10px;
+			padding: 28px 26px;
+			margin-bottom: 24px;
+		}
+		h1 {
+			margin: 0 0 8px;
+			font-size: 1.75rem;
+			color: #fff;
+		}
+		.subtitle {
+			margin: 0 0 20px;
+			color: var(--muted);
+			font-size: 0.94rem;
+		}
+		h2 {
+			margin: 24px 0 8px;
+			font-size: 1.12rem;
+			color: #fff;
+			border-left: 3px solid var(--accent);
+			padding-left: 10px;
+		}
+		p, li {
+			color: var(--text);
+			font-size: 0.96rem;
+		}
+		ul {
+			margin: 8px 0 12px;
+			padding-left: 20px;
+		}
+		li { margin-bottom: 6px; }
+		.summary-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 12px;
+			margin: 16px 0 8px;
+			padding: 14px;
+			background: #0b0708;
+			border: 1px solid var(--divider);
+			border-radius: 8px;
+			font-size: 0.9rem;
+		}
+		.summary-grid div strong {
+			display: block;
+			color: var(--muted);
+			font-size: 0.78rem;
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+		}
+		.footer {
+			margin-top: 28px;
+			padding-top: 18px;
+			border-top: 1px solid var(--divider);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 12px;
+			font-size: 0.86rem;
+			color: var(--muted);
+		}
+		.hidden { display: none; }
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<header class="topbar">
+			<a class="brand" href="/">BROADCAST <span>EVIL</span></a>
+			<nav class="nav-links" aria-label="Legal navigation">
+				<a href="/">Play Game</a>
+				<a href="/terms/">Terms of Service</a>
+				<a class="active" href="/privacy/">Privacy Policy</a>
+			</nav>
+		</header>
+
+		<div class="lang-bar">
+			<span class="meta-tag">Effective Date / Fecha de vigencia: November 18, 2026</span>
+			<div class="lang-buttons" role="group" aria-label="Language filter">
+				<button type="button" class="lang-btn active" data-lang="all">English + Español</button>
+				<button type="button" class="lang-btn" data-lang="en">English</button>
+				<button type="button" class="lang-btn" data-lang="es">Español</button>
+			</div>
+		</div>
+
+		<section class="card" data-section="en" lang="en">
+			<h1>Privacy Policy — Broadcast Evil</h1>
+			<p class="subtitle">How Broadcast Evil handles user information on the web and within Discord Activities.</p>
+
+			<div class="summary-grid">
+				<div><strong>Application</strong>Broadcast Evil</div>
+				<div><strong>Developer</strong>Relkou / Sizelu</div>
+				<div><strong>Official URL</strong>https://broadcastevil.online/</div>
+				<div><strong>Privacy Contact</strong><a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a></div>
+			</div>
+
+			<h2>1. Overview</h2>
+			<p>This Privacy Policy explains what data <strong>Broadcast Evil</strong> ("the Application", "we", "us") accesses, processes, stores, and protects when you access the game at <a href="https://broadcastevil.online/">https://broadcastevil.online/</a> or launch it as a <strong>Discord Activity</strong> via Discord OAuth2 / Embedded App SDK.</p>
+
+			<h2>2. Information We Access and Collect</h2>
+			<ul>
+				<li><strong>Discord Activity &amp; OAuth2 Session Data:</strong> When launched inside Discord, the Application receives technical session parameters and basic OAuth2 identification provided by Discord (such as Discord User ID, username/display name, avatar metadata, Activity <code>instance_id</code>, <code>frame_id</code>, <code>channel_id</code>, optional <code>guild_id</code>, and <code>platform</code>) strictly to initialize and identify your active Activity session.</li>
+				<li><strong>What We Do NOT Collect on Discord:</strong> Broadcast Evil does <strong>not</strong> access, read, or store Discord message content (no Message Content Intent), server member lists, direct messages, friend lists, or voice/audio streams.</li>
+				<li><strong>Local Game Storage:</strong> Your in-game progress (checkpoints) and settings (mouse sensitivity, audio volume, PSX visual preferences) are saved locally in your browser storage (<code>IndexedDB</code> / <code>localStorage</code>) and remain on your device.</li>
+				<li><strong>Standalone Website Analytics:</strong> When visiting <a href="https://broadcastevil.online/">https://broadcastevil.online/</a> directly in a standard browser, Google Tag Manager (<code>GTM-5G2X3MLX</code>) may collect standard anonymized usage telemetry (page views, device/browser type). External analytics trackers are automatically disabled inside Discord Activities.</li>
+			</ul>
+
+			<h2>3. How We Use Information</h2>
+			<p>We use accessed information solely to:</p>
+			<ul>
+				<li>Authenticate and initialize the Discord Activity session inside Discord's embedded iframe.</li>
+				<li>Verify domain/origin authorization so the Game only runs on authorized environments.</li>
+				<li>Preserve your local gameplay checkpoints and preferences inside your browser.</li>
+				<li>Diagnose technical issues and monitor aggregate site traffic on the standalone website.</li>
+			</ul>
+
+			<h2>4. Data Sharing &amp; Strict Prohibitions</h2>
+			<p>In full compliance with Discord's Developer Terms of Service and Developer Policy:</p>
+			<ul>
+				<li>We <strong>do not sell, rent, trade, or monetize</strong> any Discord user data or personal information.</li>
+				<li>We <strong>do not share</strong> Discord API or Activity session data with data brokers, ad networks, or unrelated third parties.</li>
+				<li>We <strong>do not use</strong> Discord user data to train artificial intelligence or machine learning models.</li>
+				<li>Static website files are hosted on GitHub Pages; any technical logs generated by hosting infrastructure or Discord itself are governed by GitHub's and Discord's respective privacy policies.</li>
+			</ul>
+
+			<h2>5. Data Retention, Security &amp; Deletion Rights</h2>
+			<ul>
+				<li><strong>Transient Discord Session Data:</strong> Discord Activity context and OAuth2 session identifiers are processed ephemerally in browser memory during your active session and are not permanently stored on external developer databases.</li>
+				<li><strong>Local Browser Data:</strong> You can delete your local save files and preferences at any time by clearing your browser's site data for <code>broadcastevil.online</code> (or Discord Activity storage) or starting a new game.</li>
+				<li><strong>Requesting Access or Deletion:</strong> Regardless of your region (including GDPR, UK GDPR, CCPA/CPRA, or LGPD rights), you may request access to, correction of, or deletion of any personal information or support correspondence we hold by emailing <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a>. Verified requests are processed within 30 days.</li>
+			</ul>
+
+			<h2>6. Children's Privacy</h2>
+			<p>Broadcast Evil is not directed to children under 13 (or the applicable minimum digital age in your jurisdiction). If you believe a child under the required age has sent us personal information via email, please contact <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a> so we can delete it promptly.</p>
+
+			<h2>7. Changes to This Privacy Policy</h2>
+			<p>We may update this Privacy Policy as the Game or Discord integrations evolve. Any updates will be published on this URL with a revised Effective Date.</p>
+
+			<h2>8. Contact Us</h2>
+			<p>For privacy inquiries or data deletion requests, contact <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a> or reach us via Instagram at <a href="https://www.instagram.com/relkouoficial" target="_blank" rel="noopener noreferrer">@relkouoficial</a>.</p>
+		</section>
+
+		<section class="card" data-section="es" lang="es">
+			<h1>Política de Privacidad — Broadcast Evil</h1>
+			<p class="subtitle">Cómo trata Broadcast Evil la información de los usuarios en la web y dentro de Actividades de Discord.</p>
+
+			<div class="summary-grid">
+				<div><strong>Aplicación</strong>Broadcast Evil</div>
+				<div><strong>Desarrollador</strong>Relkou / Sizelu</div>
+				<div><strong>Sitio oficial</strong>https://broadcastevil.online/</div>
+				<div><strong>Contacto de privacidad</strong><a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a></div>
+			</div>
+
+			<h2>1. Introducción</h2>
+			<p>Esta Política de Privacidad explica qué datos accede, procesa, almacena y protege <strong>Broadcast Evil</strong> ("la Aplicación", "nosotros") cuando juegas desde <a href="https://broadcastevil.online/">https://broadcastevil.online/</a> o al ejecutarlo como <strong>Actividad de Discord</strong> mediante Discord OAuth2 / Embedded App SDK.</p>
+
+			<h2>2. Información que recopilamos y a la que accedemos</h2>
+			<ul>
+				<li><strong>Datos de sesión de Actividad de Discord y OAuth2:</strong> Al iniciar el juego dentro de Discord, la Aplicación recibe parámetros técnicos de sesión e identificación básica de Discord (como ID de usuario de Discord, nombre de usuario/apodo visible, metadatos de avatar, <code>instance_id</code>, <code>frame_id</code>, <code>channel_id</code>, <code>guild_id</code> opcional y <code>platform</code>) exclusivamente para inicializar e identificar tu sesión activa.</li>
+				<li><strong>Datos que NO recopilamos en Discord:</strong> Broadcast Evil <strong>no</strong> lee ni almacena contenido de mensajes (sin Message Content Intent), listas de miembros de servidores, mensajes privados ni audio de canales de voz.</li>
+				<li><strong>Almacenamiento local del juego:</strong> Tu progreso (puntos de guardado) y preferencias (sensibilidad, volumen, ajustes visuales PSX) se guardan localmente en el almacenamiento de tu navegador (<code>IndexedDB</code> / <code>localStorage</code>).</li>
+				<li><strong>Analíticas en el sitio web directo:</strong> Al visitar <a href="https://broadcastevil.online/">https://broadcastevil.online/</a> directamente en un navegador, Google Tag Manager (<code>GTM-5G2X3MLX</code>) puede recopilar métricas anónimas agregadas de visitas. Dentro de Actividades de Discord, los rastreadores externos permanecen desactivados.</li>
+			</ul>
+
+			<h2>3. Cómo utilizamos la información</h2>
+			<p>Utilizamos la información únicamente para:</p>
+			<ul>
+				<li>Autenticar e inicializar la sesión de la Actividad dentro del entorno seguro de Discord.</li>
+				<li>Verificar la autorización de origen/dominio para proteger la ejecución del juego.</li>
+				<li>Conservar tus partidas guardadas y ajustes localmente en tu dispositivo.</li>
+				<li>Detectar fallos técnicos y medir visitas agregadas en la web pública.</li>
+			</ul>
+
+			<h2>4. Uso compartido y prohibiciones estrictas</h2>
+			<p>En cumplimiento de los Términos para Desarrolladores y la Política de Desarrolladores de Discord:</p>
+			<ul>
+				<li><strong>No vendemos, alquilamos ni comercializamos</strong> datos de usuarios de Discord ni información personal.</li>
+				<li><strong>No compartimos</strong> datos de Discord con intermediarios de datos, redes publicitarias ni terceros ajenos.</li>
+				<li><strong>No utilizamos</strong> datos de Discord para entrenar modelos de inteligencia artificial o aprendizaje automático.</li>
+				<li>El sitio estático se aloja en GitHub Pages; los registros técnicos propios de GitHub o de la plataforma Discord se rigen por sus respectivas políticas de privacidad.</li>
+			</ul>
+
+			<h2>5. Retención, seguridad y eliminación de datos</h2>
+			<ul>
+				<li><strong>Datos efímeros de Discord:</strong> Los identificadores de sesión de Actividad/OAuth2 se procesan únicamente en memoria durante la sesión activa y no se almacenan de forma permanente en bases de datos externas del desarrollador.</li>
+				<li><strong>Datos locales del navegador:</strong> Puedes borrar tus partidas guardadas y preferencias en cualquier momento limpiando los datos del sitio en tu navegador o iniciando una partida nueva.</li>
+				<li><strong>Solicitudes de acceso o eliminación:</strong> Puedes solicitar el acceso, corrección o eliminación de cualquier información o correo de soporte enviado escribiendo a <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a>. Atenderemos las solicitudes válidas en un plazo máximo de 30 días.</li>
+			</ul>
+
+			<h2>6. Privacidad de menores</h2>
+			<p>Broadcast Evil no está dirigido a menores de 13 años (o la edad mínima digital aplicable según tu país). Si un menor nos ha enviado datos personales por correo, contáctanos en <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a> para eliminarlos de inmediato.</p>
+
+			<h2>7. Cambios en esta Política</h2>
+			<p>Podemos actualizar esta Política de Privacidad cuando el juego o la integración con Discord evolucionen, publicando los cambios en esta página con su nueva fecha de vigencia.</p>
+
+			<h2>8. Contacto</h2>
+			<p>Si tienes dudas sobre privacidad o deseas solicitar la eliminación de datos, escríbenos a <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a> o vía Instagram en <a href="https://www.instagram.com/relkouoficial" target="_blank" rel="noopener noreferrer">@relkouoficial</a>.</p>
+		</section>
+
+		<footer class="footer">
+			<span>&copy; 2026 Broadcast Evil — Relkou / Sizelu</span>
+			<span>
+				<a href="/terms/">Terms of Service</a> &middot;
+				<a href="/privacy/">Privacy Policy</a> &middot;
+				<a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a>
+			</span>
+		</footer>
+	</main>
+
+	<script>
+		(function() {
+			var buttons = document.querySelectorAll('.lang-btn');
+			var sections = document.querySelectorAll('[data-section]');
+			function applyLang(mode) {
+				buttons.forEach(function(btn) {
+					btn.classList.toggle('active', btn.getAttribute('data-lang') === mode);
+				});
+				sections.forEach(function(sec) {
+					var lang = sec.getAttribute('data-section');
+					sec.classList.toggle('hidden', mode !== 'all' && lang !== mode);
+				});
+			}
+			buttons.forEach(function(btn) {
+				btn.addEventListener('click', function() {
+					applyLang(btn.getAttribute('data-lang'));
+				});
+			});
+		})();
+	</script>
+</body>
+</html>

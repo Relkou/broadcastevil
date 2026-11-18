@@ -59,6 +59,14 @@ if (typeof window === 'undefined') {
     });
 } else {
     (() => {
+        // Inside Discord Activities (*.discordsays.com), avoid service worker registration
+        // and full-page reloads which break Discord's single-handshake RPC lifecycle.
+        const host = (window.location && window.location.hostname) ? window.location.hostname.toLowerCase() : "";
+        const search = (window.location && window.location.search) ? window.location.search : "";
+        if (host.endsWith(".discordsays.com") || search.indexOf("frame_id=") !== -1) {
+            return;
+        }
+
         const reloadedBySelf = window.sessionStorage.getItem("coiReloadedBySelf");
         window.sessionStorage.removeItem("coiReloadedBySelf");
         const coepDegrading = (reloadedBySelf == "coepdegrade");

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Terms of Service | Broadcast Evil</title>
+	<meta name="description" content="Official Terms of Service for Broadcast Evil (Web & Discord Activity) by Relkou / Sizelu.">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://broadcastevil.online/terms/">
+	<link rel="icon" type="image/png" href="/index.icon.png">
+	<style>
+		:root {
+			--bg: #070506;
+			--panel: #100b0c;
+			--panel-border: #3a1618;
+			--accent: #dc2626;
+			--accent-soft: #f87171;
+			--text: #e7e2e2;
+			--muted: #a69b9b;
+			--divider: #261415;
+		}
+		* { box-sizing: border-box; }
+		html, body {
+			margin: 0;
+			padding: 0;
+			background: radial-gradient(circle at top, #18090b 0%, var(--bg) 55%);
+			color: var(--text);
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+			line-height: 1.65;
+		}
+		a { color: var(--accent-soft); text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		.wrap {
+			max-width: 880px;
+			margin: 0 auto;
+			padding: 32px 20px 64px;
+		}
+		.topbar {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px;
+			padding-bottom: 18px;
+			margin-bottom: 24px;
+			border-bottom: 1px solid var(--divider);
+		}
+		.brand {
+			font-size: 1.05rem;
+			font-weight: 800;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.brand span { color: var(--accent); }
+		.nav-links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 14px;
+			font-size: 0.92rem;
+		}
+		.nav-links a {
+			color: var(--muted);
+			padding: 6px 10px;
+			border-radius: 6px;
+			border: 1px solid transparent;
+		}
+		.nav-links a.active {
+			color: #fff;
+			border-color: var(--panel-border);
+			background: rgba(220, 38, 38, 0.12);
+		}
+		.lang-bar {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px;
+			margin-bottom: 24px;
+			padding: 12px 16px;
+			background: var(--panel);
+			border: 1px solid var(--panel-border);
+			border-radius: 8px;
+		}
+		.meta-tag {
+			font-size: 0.85rem;
+			color: var(--muted);
+		}
+		.lang-buttons {
+			display: flex;
+			gap: 8px;
+		}
+		.lang-btn {
+			cursor: pointer;
+			background: #170e10;
+			color: var(--muted);
+			border: 1px solid var(--panel-border);
+			border-radius: 6px;
+			padding: 6px 12px;
+			font-size: 0.85rem;
+			font-weight: 600;
+		}
+		.lang-btn.active {
+			background: var(--accent);
+			border-color: var(--accent);
+			color: #fff;
+		}
+		.card {
+			background: var(--panel);
+			border: 1px solid var(--panel-border);
+			border-radius: 10px;
+			padding: 28px 26px;
+			margin-bottom: 24px;
+		}
+		h1 {
+			margin: 0 0 8px;
+			font-size: 1.75rem;
+			color: #fff;
+		}
+		.subtitle {
+			margin: 0 0 20px;
+			color: var(--muted);
+			font-size: 0.94rem;
+		}
+		h2 {
+			margin: 24px 0 8px;
+			font-size: 1.12rem;
+			color: #fff;
+			border-left: 3px solid var(--accent);
+			padding-left: 10px;
+		}
+		p, li {
+			color: var(--text);
+			font-size: 0.96rem;
+		}
+		ul {
+			margin: 8px 0 12px;
+			padding-left: 20px;
+		}
+		li { margin-bottom: 6px; }
+		.summary-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 12px;
+			margin: 16px 0 8px;
+			padding: 14px;
+			background: #0b0708;
+			border: 1px solid var(--divider);
+			border-radius: 8px;
+			font-size: 0.9rem;
+		}
+		.summary-grid div strong {
+			display: block;
+			color: var(--muted);
+			font-size: 0.78rem;
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+		}
+		.footer {
+			margin-top: 28px;
+			padding-top: 18px;
+			border-top: 1px solid var(--divider);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 12px;
+			font-size: 0.86rem;
+			color: var(--muted);
+		}
+		.hidden { display: none; }
+	</style>
+</head>
+<body>
+	<main class="wrap">
+		<header class="topbar">
+			<a class="brand" href="/">BROADCAST <span>EVIL</span></a>
+			<nav class="nav-links" aria-label="Legal navigation">
+				<a href="/">Play Game</a>
+				<a class="active" href="/terms/">Terms of Service</a>
+				<a href="/privacy/">Privacy Policy</a>
+			</nav>
+		</header>
+
+		<div class="lang-bar">
+			<span class="meta-tag">Effective Date / Fecha de vigencia: November 18, 2026</span>
+			<div class="lang-buttons" role="group" aria-label="Language filter">
+				<button type="button" class="lang-btn active" data-lang="all">English + Español</button>
+				<button type="button" class="lang-btn" data-lang="en">English</button>
+				<button type="button" class="lang-btn" data-lang="es">Español</button>
+			</div>
+		</div>
+
+		<section class="card" data-section="en" lang="en">
+			<h1>Terms of Service — Broadcast Evil</h1>
+			<p class="subtitle">Official Terms of Service for the Broadcast Evil web application and Discord Activity.</p>
+
+			<div class="summary-grid">
+				<div><strong>Application</strong>Broadcast Evil</div>
+				<div><strong>Developer</strong>Relkou / Sizelu</div>
+				<div><strong>Official URL</strong>https://broadcastevil.online/</div>
+				<div><strong>Contact Email</strong><a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a></div>
+			</div>
+
+			<h2>1. Acceptance of Terms</h2>
+			<p>By accessing, launching, or playing <strong>Broadcast Evil</strong> ("the Application", "the Game", or "the Service") via <a href="https://broadcastevil.online/">https://broadcastevil.online/</a> or as an authorized <strong>Discord Activity</strong>, you agree to be bound by these Terms of Service and our <a href="/privacy/">Privacy Policy</a>. If you do not agree with these Terms, please do not access or use the Application.</p>
+			<p>When using Broadcast Evil inside Discord, you also agree to comply with <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Discord's Terms of Service</a>, <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>, and applicable Discord Developer policies.</p>
+
+			<h2>2. Description of the Service</h2>
+			<p>Broadcast Evil is an indie retro PSX-style survival horror game provided free of charge for personal, non-commercial entertainment in supported web browsers and as a Discord Embedded Activity. We may update, modify, suspend, or discontinue any part of the Game or Service at any time without prior notice.</p>
+
+			<h2>3. Eligibility</h2>
+			<p>You must meet the minimum age required to use Discord and online services in your jurisdiction (at least 13 years old, or the minimum digital consent age required by local law). The Game contains survival horror themes, jump-scares, and fictional violence.</p>
+
+			<h2>4. Acceptable Use &amp; Restrictions</h2>
+			<p>When using Broadcast Evil, you agree <strong>not</strong> to:</p>
+			<ul>
+				<li>Copy, mirror, redistribute, re-host, or embed the Game outside authorized platforms (<a href="https://broadcastevil.online/">broadcastevil.online</a> and official Discord Activities).</li>
+				<li>Reverse-engineer, decompile, tamper with client security checks, or attempt unauthorized access to any associated infrastructure or Discord API endpoints.</li>
+				<li>Abuse, overload, disrupt, or interfere with the availability of the Service, or use the Application for unlawful, abusive, or harmful purposes.</li>
+			</ul>
+
+			<h2>5. Intellectual Property</h2>
+			<p>All original code, 3D levels, textures, audio, voice lines, artwork, and branding associated with Broadcast Evil are the intellectual property of the developer (<strong>Relkou / Sizelu</strong>) or used under applicable licenses. You are granted a limited, non-exclusive, non-transferable, revocable license to play the Game strictly for personal entertainment.</p>
+
+			<h2>6. Third-Party Services &amp; Optional Donations</h2>
+			<p>Broadcast Evil integrates with Discord when launched as a Discord Activity and may display optional external links (such as creator social profiles or voluntary PayPal donations). Third-party services are governed by their own terms and privacy policies, and we are not responsible for external websites.</p>
+
+			<h2>7. Disclaimer of Warranties &amp; Limitation of Liability</h2>
+			<p>The Application is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, or uninterrupted availability. To the fullest extent permitted by law, the developer shall not be liable for any direct, indirect, incidental, special, or consequential damages (including loss of local browser save data or service interruptions) resulting from your use of or inability to use the Application.</p>
+
+			<h2>8. Termination of Access</h2>
+			<p>We reserve the right to restrict, block, or terminate access to the Application or any related features at our sole discretion, without prior notice, if we detect abuse, security circumvention, or violations of these Terms or Discord policies.</p>
+
+			<h2>9. Changes to These Terms</h2>
+			<p>We may revise these Terms of Service from time to time. Updated versions will be posted on this page with an updated Effective Date. Continued use of Broadcast Evil after changes constitutes acceptance of the revised Terms.</p>
+
+			<h2>10. Contact Information</h2>
+			<p>For questions, legal notices, or support regarding these Terms of Service, contact us at <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a> or via Instagram at <a href="https://www.instagram.com/relkouoficial" target="_blank" rel="noopener noreferrer">@relkouoficial</a>.</p>
+		</section>
+
+		<section class="card" data-section="es" lang="es">
+			<h1>Condiciones del Servicio — Broadcast Evil</h1>
+			<p class="subtitle">Condiciones oficiales de uso para el juego web Broadcast Evil y su Actividad de Discord.</p>
+
+			<div class="summary-grid">
+				<div><strong>Aplicación</strong>Broadcast Evil</div>
+				<div><strong>Desarrollador</strong>Relkou / Sizelu</div>
+				<div><strong>Sitio oficial</strong>https://broadcastevil.online/</div>
+				<div><strong>Correo de contacto</strong><a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a></div>
+			</div>
+
+			<h2>1. Aceptación de las Condiciones</h2>
+			<p>Al acceder, iniciar o jugar a <strong>Broadcast Evil</strong> ("la Aplicación", "el Juego" o "el Servicio") en <a href="https://broadcastevil.online/">https://broadcastevil.online/</a> o desde una <strong>Actividad autorizada de Discord</strong>, aceptas quedar sujeto a estas Condiciones del Servicio y a nuestra <a href="/privacy/">Política de Privacidad</a>. Si no estás de acuerdo, no utilices la Aplicación.</p>
+			<p>Cuando uses Broadcast Evil dentro de Discord, también te comprometes a cumplir los <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Términos de Servicio de Discord</a>, las <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Normas de la Comunidad</a> y las políticas aplicables de Discord.</p>
+
+			<h2>2. Descripción del Servicio</h2>
+			<p>Broadcast Evil es un videojuego indie de terror y supervivencia estilo retro PSX ofrecido de forma gratuita para entretenimiento personal y no comercial en navegadores web compatibles y como Actividad integrada de Discord. Podemos actualizar, modificar, suspender o discontinuar funciones del Juego o Servicio en cualquier momento sin previo aviso.</p>
+
+			<h2>3. Edad mínima</h2>
+			<p>Debes cumplir con la edad mínima requerida para usar Discord y servicios en línea en tu jurisdicción (al menos 13 años o la edad mínima de consentimiento digital aplicable en tu país). El juego incluye temática de terror y violencia ficticia.</p>
+
+			<h2>4. Uso aceptable y restricciones</h2>
+			<p>Al utilizar Broadcast Evil, aceptas <strong>no</strong>:</p>
+			<ul>
+				<li>Copiar, clonar, redistribuir, alojar por cuenta propia ni embeber el Juego fuera de los entornos autorizados (<a href="https://broadcastevil.online/">broadcastevil.online</a> y Actividades oficiales de Discord).</li>
+				<li>Realizar ingeniería inversa, descompilar, manipular protecciones de cliente o intentar accesos no autorizados a la infraestructura o APIs relacionadas.</li>
+				<li>Abusar, sobrecargar, interrumpir el servicio o utilizar la Aplicación con fines ilegales o maliciosos.</li>
+			</ul>
+
+			<h2>5. Propiedad intelectual</h2>
+			<p>El código original, niveles 3D, texturas, audios, voces, diseños y marca de Broadcast Evil pertenecen a su desarrollador (<strong>Relkou / Sizelu</strong>) o se utilizan bajo licencias aplicables. Se te concede una licencia limitada, no exclusiva, intransferible y revocable para jugar únicamente con fines de entretenimiento personal.</p>
+
+			<h2>6. Servicios de terceros y donaciones opcionales</h2>
+			<p>Broadcast Evil se integra con Discord al ejecutarse como Actividad y puede mostrar enlaces externos opcionales (como redes del creador o donaciones voluntarias por PayPal). Dichos servicios de terceros se rigen por sus propias condiciones y políticas de privacidad.</p>
+
+			<h2>7. Exclusión de garantías y limitación de responsabilidad</h2>
+			<p>La Aplicación se ofrece <strong>"TAL CUAL"</strong> y <strong>"SEGÚN DISPONIBILIDAD"</strong>, sin garantías de ningún tipo ni compromiso de disponibilidad continua. En la máxima medida permitida por la ley, el desarrollador no será responsable por daños directos, indirectos, incidentales o consecuentes (incluida la pérdida de partidas guardadas localmente en el navegador o interrupciones del servicio).</p>
+
+			<h2>8. Suspensión de acceso</h2>
+			<p>Nos reservamos el derecho de restringir o bloquear el acceso a la Aplicación ante casos de abuso, elusión de controles de seguridad o incumplimiento de estas Condiciones o de las políticas de Discord.</p>
+
+			<h2>9. Modificaciones</h2>
+			<p>Podemos actualizar estas Condiciones del Servicio ocasionalmente publicando la versión revisada en esta página con su nueva fecha de vigencia. El uso continuo de Broadcast Evil implica la aceptación de los cambios.</p>
+
+			<h2>10. Contacto</h2>
+			<p>Para consultas, avisos legales o soporte sobre estas Condiciones del Servicio, escríbenos a <a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a> o mediante Instagram en <a href="https://www.instagram.com/relkouoficial" target="_blank" rel="noopener noreferrer">@relkouoficial</a>.</p>
+		</section>
+
+		<footer class="footer">
+			<span>&copy; 2026 Broadcast Evil — Relkou / Sizelu</span>
+			<span>
+				<a href="/terms/">Terms of Service</a> &middot;
+				<a href="/privacy/">Privacy Policy</a> &middot;
+				<a href="mailto:mariososawork@gmail.com">mariososawork@gmail.com</a>
+			</span>
+		</footer>
+	</main>
+
+	<script>
+		(function() {
+			var buttons = document.querySelectorAll('.lang-btn');
+			var sections = document.querySelectorAll('[data-section]');
+			function applyLang(mode) {
+				buttons.forEach(function(btn) {
+					btn.classList.toggle('active', btn.getAttribute('data-lang') === mode);
+				});
+				sections.forEach(function(sec) {
+					var lang = sec.getAttribute('data-section');
+					sec.classList.toggle('hidden', mode !== 'all' && lang !== mode);
+				});
+			}
+			buttons.forEach(function(btn) {
+				btn.addEventListener('click', function() {
+					applyLang(btn.getAttribute('data-lang'));
+				});
+			});
+		})();
+	</script>
+</body>
+</html>
